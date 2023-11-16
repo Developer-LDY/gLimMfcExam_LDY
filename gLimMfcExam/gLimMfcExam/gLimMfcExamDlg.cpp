@@ -1,5 +1,5 @@
-
-// gLimMfcExamDlg.cpp : ±¸Çö ÆÄÀÏ
+ï»¿
+// gLimMfcExamDlg.cpp : êµ¬í˜„ íŒŒì¼
 //
 
 #include "stdafx.h"
@@ -8,14 +8,14 @@
 #include "afxdialogex.h"
 
 #include <iostream>
-#pragma comment(linker, "/entry:wWinMainCRTStartup /subsystem:console")	//µğ¹ö±ë¿ë ÄÜ¼Ö
+#pragma comment(linker, "/entry:wWinMainCRTStartup /subsystem:console")	//ë””ë²„ê¹…ìš© ì½˜ì†”
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
 
 
-// ÀÀ¿ë ÇÁ·Î±×·¥ Á¤º¸¿¡ »ç¿ëµÇ´Â CAboutDlg ´ëÈ­ »óÀÚÀÔ´Ï´Ù.
+// ì‘ìš© í”„ë¡œê·¸ë¨ ì •ë³´ì— ì‚¬ìš©ë˜ëŠ” CAboutDlg ëŒ€í™” ìƒìì…ë‹ˆë‹¤.
 using namespace std;
 
 class CAboutDlg : public CDialogEx
@@ -23,15 +23,15 @@ class CAboutDlg : public CDialogEx
 public:
 	CAboutDlg();
 
-	// ´ëÈ­ »óÀÚ µ¥ÀÌÅÍÀÔ´Ï´Ù.
+	// ëŒ€í™” ìƒì ë°ì´í„°ì…ë‹ˆë‹¤.
 #ifdef AFX_DESIGN_TIME
 	enum { IDD = IDD_ABOUTBOX };
 #endif
 
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV Áö¿øÀÔ´Ï´Ù.
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV ì§€ì›ì…ë‹ˆë‹¤.
 
-// ±¸ÇöÀÔ´Ï´Ù.
+// êµ¬í˜„ì…ë‹ˆë‹¤.
 protected:
 	DECLARE_MESSAGE_MAP()
 };
@@ -49,7 +49,7 @@ BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)
 END_MESSAGE_MAP()
 
 
-// CgLimMfcExamDlg ´ëÈ­ »óÀÚ
+// CgLimMfcExamDlg ëŒ€í™” ìƒì
 
 
 
@@ -74,15 +74,15 @@ BEGIN_MESSAGE_MAP(CgLimMfcExamDlg, CDialogEx)
 END_MESSAGE_MAP()
 
 
-// CgLimMfcExamDlg ¸Ş½ÃÁö Ã³¸®±â
+// CgLimMfcExamDlg ë©”ì‹œì§€ ì²˜ë¦¬ê¸°
 
 BOOL CgLimMfcExamDlg::OnInitDialog()
 {
 	CDialogEx::OnInitDialog();
 
-	// ½Ã½ºÅÛ ¸Ş´º¿¡ "Á¤º¸..." ¸Ş´º Ç×¸ñÀ» Ãß°¡ÇÕ´Ï´Ù.
+	// ì‹œìŠ¤í…œ ë©”ë‰´ì— "ì •ë³´..." ë©”ë‰´ í•­ëª©ì„ ì¶”ê°€í•©ë‹ˆë‹¤.
 
-	// IDM_ABOUTBOX´Â ½Ã½ºÅÛ ¸í·É ¹üÀ§¿¡ ÀÖ¾î¾ß ÇÕ´Ï´Ù.
+	// IDM_ABOUTBOXëŠ” ì‹œìŠ¤í…œ ëª…ë ¹ ë²”ìœ„ì— ìˆì–´ì•¼ í•©ë‹ˆë‹¤.
 	ASSERT((IDM_ABOUTBOX & 0xFFF0) == IDM_ABOUTBOX);
 	ASSERT(IDM_ABOUTBOX < 0xF000);
 
@@ -100,14 +100,14 @@ BOOL CgLimMfcExamDlg::OnInitDialog()
 		}
 	}
 
-	// ÀÌ ´ëÈ­ »óÀÚÀÇ ¾ÆÀÌÄÜÀ» ¼³Á¤ÇÕ´Ï´Ù.  ÀÀ¿ë ÇÁ·Î±×·¥ÀÇ ÁÖ Ã¢ÀÌ ´ëÈ­ »óÀÚ°¡ ¾Æ´Ò °æ¿ì¿¡´Â
-	//  ÇÁ·¹ÀÓ¿öÅ©°¡ ÀÌ ÀÛ¾÷À» ÀÚµ¿À¸·Î ¼öÇàÇÕ´Ï´Ù.
-	SetIcon(m_hIcon, TRUE);			// Å« ¾ÆÀÌÄÜÀ» ¼³Á¤ÇÕ´Ï´Ù.
-	SetIcon(m_hIcon, FALSE);		// ÀÛÀº ¾ÆÀÌÄÜÀ» ¼³Á¤ÇÕ´Ï´Ù.
+	// ì´ ëŒ€í™” ìƒìì˜ ì•„ì´ì½˜ì„ ì„¤ì •í•©ë‹ˆë‹¤.  ì‘ìš© í”„ë¡œê·¸ë¨ì˜ ì£¼ ì°½ì´ ëŒ€í™” ìƒìê°€ ì•„ë‹ ê²½ìš°ì—ëŠ”
+	//  í”„ë ˆì„ì›Œí¬ê°€ ì´ ì‘ì—…ì„ ìë™ìœ¼ë¡œ ìˆ˜í–‰í•©ë‹ˆë‹¤.
+	SetIcon(m_hIcon, TRUE);			// í° ì•„ì´ì½˜ì„ ì„¤ì •í•©ë‹ˆë‹¤.
+	SetIcon(m_hIcon, FALSE);		// ì‘ì€ ì•„ì´ì½˜ì„ ì„¤ì •í•©ë‹ˆë‹¤.
 
-	// TODO: ¿©±â¿¡ Ãß°¡ ÃÊ±âÈ­ ÀÛ¾÷À» Ãß°¡ÇÕ´Ï´Ù.
+	// TODO: ì—¬ê¸°ì— ì¶”ê°€ ì´ˆê¸°í™” ì‘ì—…ì„ ì¶”ê°€í•©ë‹ˆë‹¤.
 
-	return TRUE;  // Æ÷Ä¿½º¸¦ ÄÁÆ®·Ñ¿¡ ¼³Á¤ÇÏÁö ¾ÊÀ¸¸é TRUE¸¦ ¹İÈ¯ÇÕ´Ï´Ù.
+	return TRUE;  // í¬ì»¤ìŠ¤ë¥¼ ì»¨íŠ¸ë¡¤ì— ì„¤ì •í•˜ì§€ ì•Šìœ¼ë©´ TRUEë¥¼ ë°˜í™˜í•©ë‹ˆë‹¤.
 }
 
 void CgLimMfcExamDlg::OnSysCommand(UINT nID, LPARAM lParam)
@@ -123,19 +123,19 @@ void CgLimMfcExamDlg::OnSysCommand(UINT nID, LPARAM lParam)
 	}
 }
 
-// ´ëÈ­ »óÀÚ¿¡ ÃÖ¼ÒÈ­ ´ÜÃß¸¦ Ãß°¡ÇÒ °æ¿ì ¾ÆÀÌÄÜÀ» ±×¸®·Á¸é
-//  ¾Æ·¡ ÄÚµå°¡ ÇÊ¿äÇÕ´Ï´Ù.  ¹®¼­/ºä ¸ğµ¨À» »ç¿ëÇÏ´Â MFC ÀÀ¿ë ÇÁ·Î±×·¥ÀÇ °æ¿ì¿¡´Â
-//  ÇÁ·¹ÀÓ¿öÅ©¿¡¼­ ÀÌ ÀÛ¾÷À» ÀÚµ¿À¸·Î ¼öÇàÇÕ´Ï´Ù.
+// ëŒ€í™” ìƒìì— ìµœì†Œí™” ë‹¨ì¶”ë¥¼ ì¶”ê°€í•  ê²½ìš° ì•„ì´ì½˜ì„ ê·¸ë¦¬ë ¤ë©´
+//  ì•„ë˜ ì½”ë“œê°€ í•„ìš”í•©ë‹ˆë‹¤.  ë¬¸ì„œ/ë·° ëª¨ë¸ì„ ì‚¬ìš©í•˜ëŠ” MFC ì‘ìš© í”„ë¡œê·¸ë¨ì˜ ê²½ìš°ì—ëŠ”
+//  í”„ë ˆì„ì›Œí¬ì—ì„œ ì´ ì‘ì—…ì„ ìë™ìœ¼ë¡œ ìˆ˜í–‰í•©ë‹ˆë‹¤.
 
 void CgLimMfcExamDlg::OnPaint()
 {
 	if (IsIconic())
 	{
-		CPaintDC dc(this); // ±×¸®±â¸¦ À§ÇÑ µğ¹ÙÀÌ½º ÄÁÅØ½ºÆ®ÀÔ´Ï´Ù.
+		CPaintDC dc(this); // ê·¸ë¦¬ê¸°ë¥¼ ìœ„í•œ ë””ë°”ì´ìŠ¤ ì»¨í…ìŠ¤íŠ¸ì…ë‹ˆë‹¤.
 
 		SendMessage(WM_ICONERASEBKGND, reinterpret_cast<WPARAM>(dc.GetSafeHdc()), 0);
 
-		// Å¬¶óÀÌ¾ğÆ® »ç°¢Çü¿¡¼­ ¾ÆÀÌÄÜÀ» °¡¿îµ¥¿¡ ¸ÂÃä´Ï´Ù.
+		// í´ë¼ì´ì–¸íŠ¸ ì‚¬ê°í˜•ì—ì„œ ì•„ì´ì½˜ì„ ê°€ìš´ë°ì— ë§ì¶¥ë‹ˆë‹¤.
 		int cxIcon = GetSystemMetrics(SM_CXICON);
 		int cyIcon = GetSystemMetrics(SM_CYICON);
 		CRect rect;
@@ -143,7 +143,7 @@ void CgLimMfcExamDlg::OnPaint()
 		int x = (rect.Width() - cxIcon + 1) / 2;
 		int y = (rect.Height() - cyIcon + 1) / 2;
 
-		// ¾ÆÀÌÄÜÀ» ±×¸³´Ï´Ù.
+		// ì•„ì´ì½˜ì„ ê·¸ë¦½ë‹ˆë‹¤.
 		dc.DrawIcon(x, y, m_hIcon);
 	}
 	else
@@ -152,8 +152,8 @@ void CgLimMfcExamDlg::OnPaint()
 	}
 }
 
-// »ç¿ëÀÚ°¡ ÃÖ¼ÒÈ­µÈ Ã¢À» ²ô´Â µ¿¾È¿¡ Ä¿¼­°¡ Ç¥½ÃµÇµµ·Ï ½Ã½ºÅÛ¿¡¼­
-//  ÀÌ ÇÔ¼ö¸¦ È£ÃâÇÕ´Ï´Ù.
+// ì‚¬ìš©ìê°€ ìµœì†Œí™”ëœ ì°½ì„ ë„ëŠ” ë™ì•ˆì— ì»¤ì„œê°€ í‘œì‹œë˜ë„ë¡ ì‹œìŠ¤í…œì—ì„œ
+//  ì´ í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•©ë‹ˆë‹¤.
 HCURSOR CgLimMfcExamDlg::OnQueryDragIcon()
 {
 	return static_cast<HCURSOR>(m_hIcon);
@@ -162,7 +162,7 @@ HCURSOR CgLimMfcExamDlg::OnQueryDragIcon()
 
 #define IMAGE_WIDTH 640
 #define IMAGE_HEIGHT 480
-#define IMAGE_BPP 8
+#define IMAGE_BPP 24
 void CgLimMfcExamDlg::OnBnClickedBtnAction()
 {
 	int nWidth = IMAGE_WIDTH;
@@ -170,49 +170,47 @@ void CgLimMfcExamDlg::OnBnClickedBtnAction()
 	int nBpp = IMAGE_BPP;
 
 	if (m_image == NULL) {
-		m_image.Create(nWidth, -nHeight, nBpp);
-	}
-	
-	if (nBpp == IMAGE_BPP) {
-		static RGBQUAD rgb[256];
-
-		for (int i = 0; i < 256; i++) {
-			rgb[i].rgbRed = rgb[i].rgbGreen = rgb[i].rgbBlue = i;
-		}
-
-		m_image.SetColorTable(0, 256, rgb);
+		m_image.Create(nWidth, -nHeight, IMAGE_BPP);
 	}
 
 	int nPitch = m_image.GetPitch();
 	unsigned char* fm = (unsigned char*)m_image.GetBits();
-	
-	memset(fm, 0, nWidth*nHeight); // °ËÀº»ö Ã¤¿ì±â
 
-	CPoint ptData = CPoint(rand() % IMAGE_WIDTH, rand() % IMAGE_HEIGHT); // ·£´ı ÁÂÇ¥»ı¼º
-	CRect rect(ptData.x - m_nCircleSize, ptData.y - m_nCircleSize, ptData.x + m_nCircleSize, ptData.y + m_nCircleSize);// »ı¼ºµÈ ÁÂÇ¥ ±âÁØ »ç¿ëÀÚ ÀÔ·Â »çÀÌÁî Rect °è»ê
+	memset(fm, 0, nWidth*nHeight * 3); // ê²€ì€ìƒ‰ ì±„ìš°ê¸°
 
+	CPoint ptData = CPoint(rand() % IMAGE_WIDTH, rand() % IMAGE_HEIGHT); // ëœë¤ ì¢Œí‘œìƒì„±
+	CRect rect(ptData.x - m_nCircleSize, ptData.y - m_nCircleSize, ptData.x + m_nCircleSize, ptData.y + m_nCircleSize);// ìƒì„±ëœ ì¢Œí‘œ ê¸°ì¤€ ì‚¬ìš©ì ì…ë ¥ ì‚¬ì´ì¦ˆ Rect ê³„ì‚°
+	cout << "ëœë¤ì¢Œí‘œ:\t" << ptData.x << "\t" << ptData.y << endl;
+
+	int nCount = 0;
 	for (int j = rect.top; j < rect.bottom; j++) {
 		for (int i = rect.left; i < rect.right; i++) {
-			if (j * nPitch + i < IMAGE_WIDTH*IMAGE_HEIGHT && j * nPitch + i > 0) {
+			if (j * nPitch / 3 + i < IMAGE_WIDTH*IMAGE_HEIGHT && j * nPitch / 3 + i > 0) { // ë©”ëª¨ë¦¬ ë²”ìœ„ ë²—ì–´ë‚˜ëŠ”ê²ƒ ë°©ì§€
 				fm[j * nPitch + i] = 0x81;
+				nCount++;
 			}
 		}
 	}
-	
-	CClientDC dc(this);
 
-	GetCenterData(ptData);
+	CClientDC dc(this);
+	GetCenterData();
 
 	if (m_image) {
 		m_image.Draw(dc, 0, 0);
 	}
 
 	UpdateData(TRUE);
+
 	DrawData(&dc, ptData);
+
+	if (m_image) {
+		m_image.Draw(dc, 0, 0);
+	}
+
 	UpdateData(false);
 }
 
-void CgLimMfcExamDlg::GetCenterData(CPoint ptData)
+void CgLimMfcExamDlg::GetCenterData()
 {
 	unsigned char* fm = (unsigned char*)m_image.GetBits();
 	int nWidth = m_image.GetWidth();
@@ -238,11 +236,57 @@ void CgLimMfcExamDlg::GetCenterData(CPoint ptData)
 	double dCenterX = (double)nSumX / nCount;
 	double dCenterY = (double)nSumY / nCount;
 
-	cout << "¹«°ÔÁß½É:\t" << dCenterX << "\t" << dCenterY << endl;
-	memset(fm, 0, nWidth*nHeight);
+	cout << "ë¬´ê²Œì¤‘ì‹¬:\t" << dCenterX << "\t" << dCenterY << endl;
+	memset(fm, 0, nWidth*nHeight * 3);
 
 }
 
+void CgLimMfcExamDlg::DrawData(CDC* pDC, CPoint ptData)
+{
+	//CRect rect(ptData, ptData);
+
+	int nLeft = ptData.x - m_nCircleSize < 0 ? 0 : ptData.x - m_nCircleSize;
+	int nRight = ptData.x + m_nCircleSize > IMAGE_WIDTH ? IMAGE_WIDTH - 1 : ptData.x + m_nCircleSize;
+	int nTop = ptData.y - m_nCircleSize < 0 ? 0 : ptData.y - m_nCircleSize;
+	int nBottom = ptData.y + m_nCircleSize > IMAGE_HEIGHT ? IMAGE_HEIGHT - 1 : ptData.y + m_nCircleSize;
+
+	CRect rect(nLeft, nTop, nRight, nBottom);// ìƒì„±ëœ ì¢Œí‘œ ê¸°ì¤€ ì‚¬ìš©ì ì…ë ¥ ì‚¬ì´ì¦ˆ Rect ê³„ì‚°
+
+	int nPitch = m_image.GetPitch();
+	unsigned char* fm = (unsigned char*)m_image.GetBits();
+
+	// ê°€ë¡œì„ 
+	for (int i = rect.left; i < rect.right; i++) {
+		m_image.SetPixel(i, ptData.y, COLOR_YELLOW);
+	}
+
+	// ì„¸ë¡œì„ 
+	for (int i = rect.top; i < rect.bottom; i++) {
+		m_image.SetPixel(ptData.x, i, COLOR_YELLOW);
+	}
+
+	//ë‘ ì¢Œí‘œì˜ ê±°ë¦¬ì°¨ì´ë¥¼ ì´ìš©í•œ ì› ê·¸ë¦¬ê¸°
+	CPoint ptNowIndex;
+	for (int j = rect.top; j <= rect.bottom; j++) {
+		for (int i = rect.left; i <= rect.right; i++) {
+			ptNowIndex = CPoint(i, j);
+			if (GetDistance(ptNowIndex, ptData) > m_nCircleSize - 1 && GetDistance(ptNowIndex, ptData) < m_nCircleSize + 1) {
+				m_image.SetPixel(i, j, COLOR_YELLOW);
+			}
+		}
+	}
+}
+
+#include <cmath>
+double CgLimMfcExamDlg::GetDistance(CPoint ptData1, CPoint ptData2) {
+
+	double distance;
+
+	distance = sqrt(pow(ptData1.x - ptData2.x, 2) + pow(ptData1.y - ptData2.y, 2));
+	return distance;
+}
+
+/* Ellipse, Line ì„ ì´ìš©í•œ ë§ˆì»¤ í‘œì‹œ
 void CgLimMfcExamDlg::DrawData(CDC* pDC, CPoint ptData)
 {
 	CRect rect(ptData,ptData);
@@ -250,19 +294,19 @@ void CgLimMfcExamDlg::DrawData(CDC* pDC, CPoint ptData)
 	pen.CreatePen(PS_SOLID, 3, COLOR_YELLOW);
 	CPen* oldPen = pDC->SelectObject(&pen);
 	CBrush brush,* oldBrush;
-	
+
 	brush.CreateStockObject(NULL_BRUSH);
 	oldBrush = pDC->SelectObject(&brush);
 
 	rect.InflateRect(1, 1);
 
-	pDC->Ellipse(ptData.x - m_nCircleSize, ptData.y - m_nCircleSize, ptData.x + m_nCircleSize, ptData.y + m_nCircleSize);	// ¿ø ±×¸®±â
+	pDC->Ellipse(ptData.x - m_nCircleSize, ptData.y - m_nCircleSize, ptData.x + m_nCircleSize, ptData.y + m_nCircleSize);	// ì› ê·¸ë¦¬ê¸°
 	pDC->MoveTo(ptData.x - m_nCircleSize, ptData.y);
-	pDC->LineTo(ptData.x + m_nCircleSize, ptData.y);	// °¡·Î¼±
+	pDC->LineTo(ptData.x + m_nCircleSize, ptData.y);	// ê°€ë¡œì„ 
 	pDC->MoveTo(ptData.x , ptData.y - m_nCircleSize);
-	pDC->LineTo(ptData.x , ptData.y + m_nCircleSize);	// ¼¼·Î¼±
+	pDC->LineTo(ptData.x , ptData.y + m_nCircleSize);	// ì„¸ë¡œì„ 
 
 	pDC->SelectObject(oldPen);
 	pDC->SelectObject(oldBrush);
 }
-
+*/
